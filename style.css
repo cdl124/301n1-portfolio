@@ -1,0 +1,37 @@
+body {
+  background-color: #F4F7D9;
+}
+
+h1 {
+  font-size: 60px;
+  max-width: 90%;
+  font-weight: bold;
+  color: #F4F7D9;
+  letter-spacing: 2px;
+}
+
+header {
+  text-align: left;
+  margin: 1em;
+  background-color: #3E423A;
+  padding: 1%; }
+
+.template {
+  display: none; }
+
+nav ul li {
+  display: inline;
+  margin: 1em 2em; }
+
+nav ul li a {
+  color: #A4CFBE;
+  text-decoration: none;
+}
+
+nav ul li a:visited {
+  color: ##F4F7D9;
+}
+
+p {
+  color: #3E423A;
+}
