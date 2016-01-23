@@ -6,10 +6,10 @@ var portData = [
     description: "<p>This was our final project at the end of the 201 course. Our group decided on creating a website that finds all restaurants close to the Code Fellows Seattle campus. The big challenge with this project was using the Google Maps and Google Places API. The Maps API created an interactive map displayed in the middle of our homepage, and Places provided all the data on the nearby restaurants, which we then used to display the user's search results if they use the queries on the left side of the page.</p><p>The image below may or may not represent the state I was in when I originally pitched the 'restaurant finder' idea to my group...</p><img src='images/hungrywoman.jpg' />"
   },
   {
-  title: 'Cutest Kitten Contest Vote Tracker',
-  publishedOn: '2016-01-17',
-  link: 'http://cdl124.github.io/vote-tracker',
-  description: "<p>The \"Cutest Kitten Contest\" is a website that allows users to view two randomly-generated images of kittens at a time. The user then clicks on the kitten they find the cutest of the two, and three things happen:</p><ol><li>The selected image is highlighted in yellow,</li><li>One vote is logged for that image,which shows in the bar chart below the \"Get two more kitties!\" button,</li><li>and the website will also log one vote for that image in the user's voting history.</li><ol><img src='images/kitten.jpg' />"
+    title: 'Cutest Kitten Contest Vote Tracker',
+    publishedOn: '2016-01-17',
+    link: 'http://cdl124.github.io/vote-tracker',
+    description: "<p>The \"Cutest Kitten Contest\" is a website that allows users to view two randomly-generated images of kittens at a time. The user then clicks on the kitten they find the cutest of the two, and three things happen:</p><ol><li>The selected image is highlighted in yellow,</li><li>One vote is logged for that image,which shows in the bar chart below the \"Get two more kitties!\" button,</li><li>and the website will also log one vote for that image in the user's voting history.</li><ol><img src='images/kitten.jpg' />"
   },
   {
     title: 'Doughnut Shop Simulated Demand Webpage',

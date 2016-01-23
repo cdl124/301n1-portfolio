@@ -9,7 +9,7 @@ projectView.handleMainNav = function() {
 
 projectView.setTeasers = function() {
 $('article').each(function() {
-  $('.description *:nth-of-type(n+1)').hide();
+  $('.description *:nth-of-type(n+2)').hide();
   })
 
   $('.more').on('click', function(e) {

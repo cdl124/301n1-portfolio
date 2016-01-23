@@ -1,0 +1,8 @@
+.main-nav ul {
+  display: flex;
+  flex-position: row;
+}
+
+.main-nav ul li {
+  margin: auto 1em 1em 1em;
+}

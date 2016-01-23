@@ -8,24 +8,14 @@ function Project(pjt) {
 }
 
 Project.prototype.toHtml = function() {
-  var $newProject = $('article.template').clone();
+  var projectTemplate = $('#project-template').html();
+  var compileProject = Handlebars.compile(projectTemplate);
+  var html = compileProject(this);
 
-  $newProject.find('.title').html(this.title);
-  // Shows when the article was published
-  $newProject.find('time[pubdate]').attr('title', this.publishedOn);
+  this.daysAgo = parseInt((new Date() - new Date(this.publishedOn))/60/60/24/1000);
+  this.publishStatus = this.publishedOn ? 'Published ' + this.daysAgo + ' days ago' : '(draft)';
 
-  $newProject.find('time').html('about ' + parseInt((new Date() - new Date(this.publishedOn))/60/60/24/1000) + ' days ago');
-
-  // Links to projects
-  $newProject.find('.link').attr('href', this.link).html(this.link);
-
-  $newProject.find('.description').html(this.description);
-
-  $newProject.append('<hr />');
-
-  $newProject.removeClass('template');
-
-  return $newProject;
+  return html;
 }
 
   $(document).ready(function() {
