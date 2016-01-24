@@ -1,0 +1,29 @@
+body, form {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #F4F7D9;
+}
+
+a {
+  color: #6C6E58;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #417378;
+}
+
+p {
+  color: #3E423A;
+}
+
+h1 {
+  color: #F4F7D9;
+  font-size: 3em;
+  max-width: 95%;
+}
+
+li {
+  list-style-type: none;
+}

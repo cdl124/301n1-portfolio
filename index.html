@@ -1,0 +1,57 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+  <head>
+    <title>Cortney's Personal Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="smacss/base.css">
+    <link rel="stylesheet" type="text/css" href="smacss/layout.css">
+    <link rel="stylesheet" type="text/css" href="smacss/module.css">
+
+    <script id="project-template" type="text/x-handlebars-template">
+      <article class="pjt">
+        <p class="title"><a class="link" href="{{link}}">{{title}}<a/></p>
+        <div class="description">{{{description}}}</div>
+        <a href="#" class="more">More &rarr;</a>
+        <hr />
+      </article>
+    </script>
+
+  </head>
+  <body>
+
+    <header>
+      <h1>Cortney D. Lane</h1>
+      <nav class="main-nav">
+        <ul class="one">
+          <li class="tab" data-content="projects"><a href="#">Home</a></li>
+          <li class="tab" data-content="about"><a href="#">About</a></li>
+          <li class="social"><a href="https://www.linkedin.com/in/cortney-lane-932b4222">LinkedIn</a></li>
+          <li class="social"><a href="https://github.com/cdl124">Github</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="container">
+      <h3>My Projects</h3>
+      <section id="projects" class="tab-content">
+      <!-- Projects append here -->
+      </section>
+
+      <section id="about" class="tab-content">
+        <h3>About Cortney</h3>
+        <p>Cortney is an aspiring money-maker and expert of whichever subject most strikes her fancy at the moment.</p>
+        <p>Currently her only hobbies are work and Code Fellows, though she can occasionally be seen drawing autobiographical comics and skiing really fast down the snowy slopes. (But not at the same time.)</p>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; Cortney Lane 2016</p>
+    </footer>
+
+  </body>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/2.0.0/handlebars.js"></script>
+  <script src="scripts/script.js"></script>
+  <script src="scripts/portProjects.js"></script>
+  <script src="scripts/projectView.js"></script>
+</html>
