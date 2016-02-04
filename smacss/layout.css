@@ -1,0 +1,19 @@
+header {
+  text-align: left;
+  margin: 1em auto;
+  background-color: #3E423A;
+  padding: 1%;
+  max-width: 90%;
+  border-radius: 10px;
+}
+
+.title {
+  font-style: italic;
+  font-size: large;
+}
+
+main {
+  margin: auto;
+  width: 960px;
+  max-width: 90%;
+}
