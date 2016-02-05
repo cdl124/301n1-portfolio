@@ -1,3 +1,4 @@
+(function(module) {
 
 function Project(pjt) {
   this.title = pjt.title,
@@ -27,15 +28,33 @@ Project.loadAll = function(portData) {
   portData.forEach(function(el) {
     Project.all.push(new Project(el));
   })
+  Project.all = portData.map(function(el) {
+    return new Project(el);
+  })
 }
 
-Project.fetchAll = function() {
+Project.fetchAll = function(view) {
   if (localStorage.portData) {
     Project.loadAll(JSON.parse(localStorage.portData));
-    projectView.initIndexPage();
+    view();
   } else {
     Project.loadAll(portData);
     localStorage.portData = JSON.stringify(portData);
-    projectView.initIndexPage();
+    view();
   }
 }
+
+// "Fun facts" function counting number of instances of certain words
+Project.numInstances = function() {
+  console.log(Project.all.toString());
+  return Project.all.map(function(pjt) {
+    return pjt.description.split('g').length;
+  })
+  .reduce(function(add, g) {
+    console.log(add);
+    return add + g;
+  }, 0)
+}
+
+module.Project = Project;
+})(window);

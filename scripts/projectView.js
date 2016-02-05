@@ -1,3 +1,5 @@
+(function(module) {
+
 var projectView = {};
 
 projectView.handleMainNav = function() {
@@ -22,10 +24,20 @@ $('article').each(function() {
 
 projectView.initIndexPage = function() {
   Project.all.forEach(function(a) {
-    $('#projects').append(a.toHtml());
-  })
+    $('#projects').append(a.toHtml())
+  });
 }
+
+projectView.postInstances = function() {
+  $('.catInstances').append('Fun fact: The letter "g" appears ' + Project.numInstances() + ' times in my portfolio!');
+}
+
 $(document).ready(function() {
   projectView.handleMainNav();
   projectView.setTeasers();
+  projectView.postInstances();
 })
+
+
+module.projectView = projectView;
+})(window);
